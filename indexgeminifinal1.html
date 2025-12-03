@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithi Bariki | Indian Classical Dancer</title>
+    <meta name="description" content="Portfolio of Adithi Bariki, a renowned Bharatanatyam artist and Guinness World Record holder.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Config for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dance-gold': '#B8860B', 
+                        'dance-red': '#800000',
+                        'dance-dark': '#1a0505',
+                        'dance-cream': '#FDFBF7',
+                        'dance-accent': '#F5F5F0',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1627912232986-77864f19b0d1?q=80&w=2574&auto=format&fit=crop'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="bg-dance-cream text-gray-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-2xl font-bold tracking-widest text-gray-900">
+                ADITHI<span class="text-dance-gold">BARIKI</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-500">
+                <a href="#home" class="hover:text-dance-red transition-colors">Home</a>
+                <a href="#about" class="hover:text-dance-red transition-colors">About</a>
+                <a href="#qualifications" class="hover:text-dance-red transition-colors">Qualifications</a>
+                <a href="#awards" class="hover:text-dance-red transition-colors">Awards</a>
+                <a href="#gallery" class="hover:text-dance-red transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-dance-red transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="#home" class="block py-3 px-6 text-sm hover:bg-gray-50 hover:text-dance-red">Home</a>
+            <a href="#about" class="block py-3 px-6 text-sm hover:bg-gray-50 hover:text-dance-red">About</a>
+            <a href="#qualifications" class="block py-3 px-6 text-sm hover:bg-gray-50 hover:text-dance-red">Qualifications</a>
+            <a href="#awards" class="block py-3 px-6 text-sm hover:bg-gray-50 hover:text-dance-red">Awards</a>
+            <a href="#gallery" class="block py-3 px-6 text-sm hover:bg-gray-50 hover:text-dance-red">Gallery</a>
+            <a href="#contact" class="block py-3 px-6 text-sm hover:bg-gray-50 hover:text-dance-red">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-bg h-screen flex items-center justify-center relative">
+        <div class="text-center text-white px-4 max-w-4xl animate-fade-in-up">
+            <p class="mb-4 text-dance-gold text-lg md:text-xl font-serif italic tracking-wider">Soulful Expressions in Motion</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-8 text-shadow-sm tracking-tight">Adithi Bariki</h1>
+            <p class="text-lg md:text-xl font-light mb-10 max-w-xl mx-auto text-white/90">
+                Bharatanatyam Artist | Guinness World Record Holder | Vidwat Scholar
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#about" class="bg-white text-gray-900 px-8 py-3 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-dance-gold hover:text-white transition-all duration-300 shadow-lg">
+                    Discover More
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image Container - Updated with LH3 Link -->
+                <div class="w-full lg:w-5/12">
+                    <div class="relative group">
+                        <!-- Ornamental Border -->
+                        <div class="absolute -inset-4 border-2 border-dance-gold/20 rounded-lg transform translate-x-2 translate-y-2 transition-transform duration-500 group-hover:translate-x-3 group-hover:translate-y-3"></div>
+                        <img src="https://lh3.googleusercontent.com/d/1Cqlytpm8KFZI40S35OiZcynZpqjM7CRB" 
+                             alt="Adithi Bariki" 
+                             class="w-full h-auto rounded shadow-lg relative z-10 object-cover aspect-[3/4] hover:shadow-2xl transition-shadow duration-500">
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="w-full lg:w-7/12">
+                    <h2 class="text-4xl lg:text-5xl font-serif font-medium text-gray-900 mb-6">The Artistic Journey</h2>
+                    <p class="text-xl font-serif text-dance-gold italic mb-8">"Dance is the hidden language of the soul."</p>
+                    
+                    <div class="space-y-6 text-gray-600 font-light leading-relaxed">
+                        <p>
+                            My journey into the world of rhythm and expression began at the tender age of <strong>three</strong>. 
+                            What started as a childhood fascination has blossomed into a lifelong spiritual pursuit.
+                        </p>
+                        <p>
+                            With over <strong>350 performances</strong> across diverse platforms, I have had the privilege of sharing this ancient art form 
+                            on prestigious stages, from auspicious temples to national television (Doordarshan).
+                        </p>
+                    </div>
+
+                    <!-- Key Highlights Summary -->
+                    <div class="mt-8 p-6 bg-dance-accent rounded-lg border-l-4 border-dance-gold">
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Highlights</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-gray-700">
+                                <i class="fas fa-crown text-dance-gold w-6"></i> Guinness World Record Holder (2010)
+                            </li>
+                            <li class="flex items-center text-sm text-gray-700">
+                                <i class="fas fa-award text-dance-gold w-6"></i> Multiple State Level & Kala Ratna Awards
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications (Minimal) -->
+    <section id="qualifications" class="py-24 bg-dance-accent">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif text-gray-900">Professional Milestones</h2>
+                <div class="w-12 h-px bg-dance-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded shadow-sm text-center hover:-translate-y-1 transition-transform duration-300 border-b-2 border-transparent hover:border-dance-gold">
+                    <div class="text-dance-gold text-2xl mb-4"><i class="fas fa-university"></i></div>
+                    <h3 class="font-serif text-xl text-gray-900 mb-2">Senior Grade</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Completed Lower, Higher, and Senior exams by Govt. of Karnataka.</p>
+                </div>
+                <div class="bg-white p-8 rounded shadow-sm text-center hover:-translate-y-1 transition-transform duration-300 border-b-2 border-transparent hover:border-dance-gold">
+                    <div class="text-dance-gold text-2xl mb-4"><i class="fas fa-star"></i></div>
+                    <h3 class="font-serif text-xl text-gray-900 mb-2">Ranga Pravesham</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Professional solo debut marking the transition to a performing artist.</p>
+                </div>
+                <div class="bg-white p-8 rounded shadow-sm text-center hover:-translate-y-1 transition-transform duration-300 border-b-2 border-transparent hover:border-dance-gold">
+                    <div class="text-dance-gold text-2xl mb-4"><i class="fas fa-scroll"></i></div>
+                    <h3 class="font-serif text-xl text-gray-900 mb-2">Pre-Vidwat</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Successfully completed advanced theoretical and practical scholarship.</p>
+                </div>
+                <div class="bg-white p-8 rounded shadow-sm text-center hover:-translate-y-1 transition-transform duration-300 border-b-2 border-transparent hover:border-dance-gold">
+                    <div class="text-dance-gold text-2xl mb-4"><i class="fas fa-award"></i></div>
+                    <h3 class="font-serif text-xl text-gray-900 mb-2">Vidhushini</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Pursuing the highest title in dance, symbolizing mastery of the art.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section (Condensed) -->
+    <section id="awards" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-12">
+                <span class="text-dance-gold font-bold tracking-widest uppercase text-xs">Recognition</span>
+                <h2 class="text-4xl font-serif text-gray-900 mt-2">Honors & Awards</h2>
+            </div>
+
+            <!-- Major Achievement -->
+            <div class="bg-gradient-to-r from-dance-dark to-gray-900 text-white p-8 rounded-lg shadow-xl mb-12 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 text-white/5 text-9xl">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-serif font-bold text-dance-gold mb-2"><i class="fas fa-trophy mr-3"></i>Guinness World Record</h3>
+                    <p class="text-white/80">Achieved for classical dance excellence on December 26, 2010 in Hyderabad.</p>
+                </div>
+                <div class="text-4xl text-dance-gold opacity-80 relative z-10"><i class="fas fa-certificate"></i></div>
+            </div>
+
+            <!-- Condensed Grid for Other Awards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Group 1 -->
+                <div class="border border-gray-100 p-6 rounded hover:shadow-lg transition-shadow bg-dance-accent/30">
+                    <span class="text-dance-gold font-bold text-xs uppercase tracking-wide block mb-3 border-b border-dance-gold/20 pb-2">2009 • Titles</span>
+                    <ul class="space-y-3">
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Karnataka Kala Ratna Award</li>
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Karunada Padmabhushana</li>
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Chalukya Vikramaditya Award</li>
+                    </ul>
+                </div>
+
+                <!-- Group 2 -->
+                <div class="border border-gray-100 p-6 rounded hover:shadow-lg transition-shadow bg-dance-accent/30">
+                    <span class="text-dance-gold font-bold text-xs uppercase tracking-wide block mb-3 border-b border-dance-gold/20 pb-2">2007-2008 • State Honors</span>
+                    <ul class="space-y-3">
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Srikrishnadevaraya State Award</li>
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Dayananda Sagar State Level</li>
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Tirumala Award</li>
+                    </ul>
+                </div>
+
+                <!-- Group 3 -->
+                <div class="border border-gray-100 p-6 rounded hover:shadow-lg transition-shadow bg-dance-accent/30">
+                    <span class="text-dance-gold font-bold text-xs uppercase tracking-wide block mb-3 border-b border-dance-gold/20 pb-2">2006-2014 • Cultural Programs</span>
+                    <ul class="space-y-3">
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Delhi Telugu Kala Sanga (2014)</li>
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>State Level Cultural Program (2006)</li>
+                        <li class="text-gray-800 font-serif font-medium"><i class="fas fa-medal text-dance-gold/50 mr-2 text-xs"></i>Sri Guru Raghavendra Sadbhav</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW Gallery Section -->
+    <section id="gallery" class="py-24 bg-dance-accent">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif text-gray-900">Gallery</h2>
+                <p class="text-gray-500 mt-2 text-sm">Glimpses of grace and tradition.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Image 1 -->
+                <div class="group relative overflow-hidden rounded shadow-sm aspect-[4/5] cursor-pointer bg-white p-1 border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/1kuGoRSAZkYQSi5-ht2TCGLrogtK-x5a8" alt="Gallery Image 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-dance-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="group relative overflow-hidden rounded shadow-sm aspect-[4/5] cursor-pointer bg-white p-1 border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/14Tfycjxp6awS_QC6VtN3A1aQQkvX0wqU" alt="Gallery Image 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-dance-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="group relative overflow-hidden rounded shadow-sm aspect-[4/5] cursor-pointer bg-white p-1 border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/1P4du2RS_I9fqVTQyYdO3NeHx85LYVO6c" alt="Gallery Image 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-dance-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="group relative overflow-hidden rounded shadow-sm aspect-[4/5] cursor-pointer bg-white p-1 border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/18gbmeF-ENyiiP2W1IbsFEFyHs_hHHpXz" alt="Gallery Image 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-dance-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="group relative overflow-hidden rounded shadow-sm aspect-[4/5] cursor-pointer bg-white p-1 border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/1Y68CqlmGpbEFcxFPl-xMvr250VgRpcys" alt="Gallery Image 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-dance-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="group relative overflow-hidden rounded shadow-sm aspect-[4/5] cursor-pointer bg-white p-1 border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/1hsVSJfW6ud3nlki6u5YmEVuZ4fl1j4kO" alt="Gallery Image 6" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-dance-dark/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Performance Section (Clean Link) -->
+    <section class="py-20 bg-dance-dark text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-serif mb-8">Featured Performance</h2>
+            <a href="https://www.youtube.com/watch?v=Coai87S97MQ&list=RDCoai87S97MQ&start_radio=1" target="_blank" class="group inline-block max-w-2xl w-full bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-8 transition-all duration-300">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-dance-gold/20 flex items-center justify-center text-dance-gold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-play text-xl ml-1"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-medium mb-2 group-hover:text-dance-gold transition-colors">Neela Megha Shareera (Kuchipudi)</h3>
+                    <p class="text-gray-400 text-sm mb-4">Diwali 2022 • Victoria BC</p>
+                    <span class="text-xs uppercase tracking-widest border-b border-dance-gold pb-1 text-dance-gold">Watch on YouTube</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-24 border-t border-gray-100">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-4xl font-serif text-gray-900 mb-6">Get in Touch</h2>
+            <p class="text-gray-500 mb-12 font-light">
+                For performances, collaborations, or inquiries.
+            </p>
+            
+            <div class="bg-dance-accent p-10 rounded-lg shadow-sm border border-gray-100">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-dance-gold shadow-sm mx-auto mb-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="text-sm font-bold text-gray-900 uppercase tracking-wide">Email</h4>
+                        <a href="mailto:chinniadithi@gmail.com" class="text-lg text-gray-600 hover:text-dance-gold transition-colors">chinniadithi@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-6 pt-8 border-t border-gray-200/50">
+                    <a href="#" class="text-gray-400 hover:text-dance-gold transition-colors text-xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-dance-gold transition-colors text-xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-dance-gold transition-colors text-xl"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-400 py-8 text-center text-xs uppercase tracking-widest border-t border-gray-100">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2023 Adithi Bariki. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Navbar scroll effect -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.replace('bg-white/95', 'bg-white');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.replace('bg-white', 'bg-white/95');
+            }
+        });
+    </script>
+</body>
+</html>
