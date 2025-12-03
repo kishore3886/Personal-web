@@ -73,21 +73,36 @@
 <body class="bg-dance-cream text-gray-800 font-sans antialiased overflow-x-hidden">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 transition-all duration-300 bg-dance-dark/90 backdrop-blur-md border-b border-dance-gold/20" id="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="font-heading text-xl text-white tracking-widest hover:text-dance-gold transition-colors">
+    <!-- Changed bg to transparent initially so image shows through -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 border-b border-white/10" id="navbar">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="font-heading text-xl text-white tracking-widest hover:text-dance-gold transition-colors shadow-black drop-shadow-md">
                 Adithi<span class="text-dance-gold">Bariki</span>
             </a>
-            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-300">
-                <a href="#home" class="hover:text-dance-gold transition-colors">Home</a>
-                <a href="#about" class="hover:text-dance-gold transition-colors">Journey</a>
-                <a href="#qualifications" class="hover:text-dance-gold transition-colors">Milestones</a>
-                <a href="#awards" class="hover:text-dance-gold transition-colors">Honors</a>
-                <a href="#gallery" class="hover:text-dance-gold transition-colors">Gallery</a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-200">
+                <a href="#home" class="hover:text-dance-gold transition-colors drop-shadow-md">Home</a>
+                <a href="#about" class="hover:text-dance-gold transition-colors drop-shadow-md">Journey</a>
+                <a href="#qualifications" class="hover:text-dance-gold transition-colors drop-shadow-md">Milestones</a>
+                <a href="#awards" class="hover:text-dance-gold transition-colors drop-shadow-md">Honors</a>
+                <a href="#gallery" class="hover:text-dance-gold transition-colors drop-shadow-md">Gallery</a>
             </div>
-            <button class="md:hidden text-dance-gold text-xl">
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-dance-gold text-2xl focus:outline-none drop-shadow-md">
                 <i class="fas fa-bars"></i>
             </button>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dance-dark border-t border-dance-gold/20 absolute w-full top-full left-0">
+            <div class="flex flex-col px-6 py-4 space-y-4 text-center">
+                <a href="#home" class="text-gray-300 hover:text-dance-gold uppercase tracking-widest text-sm py-2 border-b border-white/5" onclick="closeMobileMenu()">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-dance-gold uppercase tracking-widest text-sm py-2 border-b border-white/5" onclick="closeMobileMenu()">Journey</a>
+                <a href="#qualifications" class="text-gray-300 hover:text-dance-gold uppercase tracking-widest text-sm py-2 border-b border-white/5" onclick="closeMobileMenu()">Milestones</a>
+                <a href="#awards" class="text-gray-300 hover:text-dance-gold uppercase tracking-widest text-sm py-2 border-b border-white/5" onclick="closeMobileMenu()">Honors</a>
+                <a href="#gallery" class="text-gray-300 hover:text-dance-gold uppercase tracking-widest text-sm py-2 border-b border-white/5" onclick="closeMobileMenu()">Gallery</a>
+                <a href="#contact" class="text-dance-gold font-bold uppercase tracking-widest text-sm py-2" onclick="closeMobileMenu()">Contact</a>
+            </div>
         </div>
     </nav>
 
@@ -98,9 +113,13 @@
         <div class="absolute inset-4 md:inset-8 border border-dance-gold/30 z-10 pointer-events-none"></div>
         <div class="absolute inset-6 md:inset-10 border border-dance-gold/60 z-10 pointer-events-none"></div>
         
-        <!-- Corner Ornaments -->
-        <div class="absolute top-8 left-8 text-dance-gold text-4xl z-20 opacity-80"><img src="https://img.icons8.com/ios-filled/50/C5A059/ornament.png" class="w-8 h-8 rotate-180 transform"></div>
-        <div class="absolute bottom-8 right-8 text-dance-gold text-4xl z-20 opacity-80"><img src="https://img.icons8.com/ios-filled/50/C5A059/ornament.png" class="w-8 h-8"></div>
+        <!-- Corner Ornaments (Replaced IMG with Icons to fix broken link) -->
+        <div class="absolute top-8 left-8 text-dance-gold text-4xl z-20 opacity-80">
+            <i class="fas fa-bahai spin-slow"></i>
+        </div>
+        <div class="absolute bottom-8 right-8 text-dance-gold text-4xl z-20 opacity-80">
+            <i class="fas fa-bahai"></i>
+        </div>
 
         <!-- Main Content -->
         <div class="text-center text-white px-4 relative z-20 max-w-5xl">
@@ -109,17 +128,17 @@
                 <span class="text-dance-gold text-2xl"><i class="fas fa-om"></i></span>
             </div>
 
-            <h2 class="font-serif text-xl md:text-3xl italic text-dance-gold-light mb-4 tracking-wider opacity-90">
+            <h2 class="font-serif text-xl md:text-3xl italic text-dance-gold-light mb-4 tracking-wider opacity-90 drop-shadow-md">
                 Guinness World Record Holder
             </h2>
             
-            <h1 class="font-heading text-6xl md:text-8xl lg:text-9xl mb-6 text-white drop-shadow-2xl leading-tight">
+            <h1 class="font-heading text-5xl md:text-8xl lg:text-9xl mb-6 text-white drop-shadow-2xl leading-tight">
                 Adithi Bariki
             </h1>
             
             <div class="flex items-center justify-center gap-4 mb-10 opacity-90">
                 <div class="h-px w-12 bg-dance-gold"></div>
-                <p class="font-sans text-lg uppercase tracking-[0.3em] font-light">Bharatanatyam & Kuchipudi Artist</p>
+                <p class="font-sans text-sm md:text-lg uppercase tracking-[0.3em] font-light">Bharatanatyam & Kuchipudi Artist</p>
                 <div class="h-px w-12 bg-dance-gold"></div>
             </div>
 
@@ -127,7 +146,7 @@
                 <a href="#gallery" class="px-8 py-3 border border-dance-gold text-dance-gold hover:bg-dance-gold hover:text-dance-dark transition-all duration-300 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">
                     View Gallery
                 </a>
-                <a href="#contact" class="px-8 py-3 bg-dance-gold text-dance-dark hover:bg-white transition-all duration-300 uppercase tracking-widest text-xs font-bold shadow-[0_0_20px_rgba(197,160,89,0.3)]">
+                <a href="mailto:chinniadithi@gmail.com" class="px-8 py-3 bg-dance-gold text-dance-dark hover:bg-white transition-all duration-300 uppercase tracking-widest text-xs font-bold shadow-[0_0_20px_rgba(197,160,89,0.3)]">
                     Book Performance
                 </a>
             </div>
@@ -411,14 +430,29 @@
         window.addEventListener('scroll', function() {
             const nav = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                nav.classList.add('py-2', 'shadow-lg');
-                nav.classList.remove('py-4', 'bg-dance-dark/90');
-                nav.classList.add('bg-dance-dark');
+                // When scrolling down, make navbar solid dark
+                nav.classList.add('bg-dance-dark/95', 'shadow-lg');
+                nav.classList.remove('bg-transparent', 'py-4', 'border-white/10');
+                nav.classList.add('py-2', 'border-dance-gold/20');
             } else {
-                nav.classList.remove('py-2', 'shadow-lg', 'bg-dance-dark');
-                nav.classList.add('py-4', 'bg-dance-dark/90');
+                // At top, make navbar transparent
+                nav.classList.remove('bg-dance-dark/95', 'shadow-lg', 'py-2', 'border-dance-gold/20');
+                nav.classList.add('bg-transparent', 'py-4', 'border-white/10');
             }
         });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        function closeMobileMenu() {
+            mobileMenu.classList.add('hidden');
+        }
     </script>
 </body>
 </html>
