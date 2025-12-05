@@ -73,8 +73,7 @@
 <body class="bg-dance-cream text-gray-800 font-sans antialiased overflow-x-hidden">
 
     <!-- Navigation -->
-    <!-- Changed bg to transparent initially so image shows through -->
-    <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 border-b border-white/10" id="navbar">
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-dance-dark/95 py-4 border-b border-dance-gold/20 shadow-lg" id="navbar">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="#" class="font-heading text-xl text-white tracking-widest hover:text-dance-gold transition-colors shadow-black drop-shadow-md">
                 Adithi<span class="text-dance-gold">Bariki</span>
@@ -125,7 +124,7 @@
         <div class="text-center text-white px-4 relative z-20 max-w-5xl">
             
             <div class="mb-6 animate-[bounce_3s_infinite]">
-                <span class="text-dance-gold text-2xl"><i class="fas fa-om"></i></span>
+                <span class="text-dance-gold text-6xl"><i class="fas fa-om"></i></span>
             </div>
 
             <h2 class="font-serif text-xl md:text-3xl italic text-dance-gold-light mb-4 tracking-wider opacity-90 drop-shadow-md">
@@ -381,38 +380,80 @@
         </div>
     </section>
 
-    <!-- FEATURED PERFORMANCE (Video) -->
+    <!-- FEATURED PERFORMANCES (Videos Side-by-Side) -->
     <section class="py-24 bg-dance-gold/10">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="font-heading text-3xl text-dance-red mb-8">Featured Performance</h2>
-            <div class="max-w-4xl mx-auto bg-white p-2 shadow-xl">
-                 <!-- Direct YouTube Link Button Styled as a Card -->
-                 <div class="relative group overflow-hidden">
-                    <div class="bg-gray-900 aspect-video flex items-center justify-center relative">
-                        <img src="https://img.youtube.com/vi/Coai87S97MQ/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
-                        <a href="https://www.youtube.com/watch?v=Coai87S97MQ&list=RDCoai87S97MQ&start_radio=1" target="_blank" class="w-20 h-20 bg-dance-gold rounded-full flex items-center justify-center text-white text-2xl z-10 hover:scale-110 transition-transform shadow-[0_0_30px_rgba(197,160,89,0.5)]">
-                            <i class="fas fa-play ml-1"></i>
-                        </a>
-                    </div>
-                    <div class="bg-white p-6 text-left border-t-4 border-dance-gold">
-                        <h3 class="font-heading text-xl text-gray-900">Neela Megha Shareera</h3>
-                        <p class="font-serif text-gray-500">Kuchipudi Performance • Diwali 2022 • Victoria, BC</p>
-                    </div>
-                 </div>
+            <h2 class="font-heading text-3xl text-dance-red mb-8">Featured Performances</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Video 1 -->
+                <div class="bg-white p-2 shadow-xl h-full">
+                     <div class="relative group overflow-hidden h-full flex flex-col">
+                        <div class="bg-gray-900 aspect-video flex items-center justify-center relative">
+                            <img src="https://img.youtube.com/vi/Coai87S97MQ/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
+                            <a href="https://www.youtube.com/watch?v=Coai87S97MQ&list=RDCoai87S97MQ&start_radio=1" target="_blank" class="w-16 h-16 bg-dance-gold rounded-full flex items-center justify-center text-white text-xl z-10 hover:scale-110 transition-transform shadow-[0_0_30px_rgba(197,160,89,0.5)]">
+                                <i class="fas fa-play ml-1"></i>
+                            </a>
+                        </div>
+                        <div class="bg-white p-6 text-left border-t-4 border-dance-gold flex-grow">
+                            <h3 class="font-heading text-xl text-gray-900">Neela Megha Shareera</h3>
+                            <p class="font-serif text-gray-500 mt-2">Kuchipudi Performance • Diwali 2022 • Victoria, BC</p>
+                        </div>
+                     </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-white p-2 shadow-xl h-full">
+                     <div class="relative group overflow-hidden h-full flex flex-col">
+                        <div class="bg-gray-900 aspect-video flex items-center justify-center relative">
+                            <img src="https://img.youtube.com/vi/CvnWRur3AEM/maxresdefault.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity">
+                            <a href="https://www.youtube.com/watch?si=t4CwmBzbINfS4yUi&v=CvnWRur3AEM&feature=youtu.be" target="_blank" class="w-16 h-16 bg-dance-gold rounded-full flex items-center justify-center text-white text-xl z-10 hover:scale-110 transition-transform shadow-[0_0_30px_rgba(197,160,89,0.5)]">
+                                <i class="fas fa-play ml-1"></i>
+                            </a>
+                        </div>
+                        <div class="bg-white p-6 text-left border-t-4 border-dance-gold flex-grow">
+                            <h3 class="font-heading text-xl text-gray-900">Nari As Shakti</h3>
+                            <p class="font-serif text-gray-500 mt-2">Defiance and Dignity • Diwali 2025 • Victoria, BC</p>
+                        </div>
+                     </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT FORM SECTION -->
     <section id="contact" class="bg-dance-red text-white py-24 relative overflow-hidden">
         <div class="absolute inset-0 bg-pattern opacity-10"></div>
         <div class="container mx-auto px-6 text-center relative z-10">
             <h2 class="font-heading text-4xl mb-4">Get in Touch</h2>
             <p class="font-serif text-dance-gold text-lg mb-12 italic">Open for collaborations and performances</p>
             
-            <a href="mailto:chinniadithi@gmail.com" class="inline-block border-2 border-dance-gold text-dance-gold font-bold px-10 py-4 text-xl hover:bg-dance-gold hover:text-dance-red transition-all duration-300 uppercase tracking-widest">
-                chinniadithi@gmail.com
-            </a>
+            <form id="contactForm" class="max-w-lg mx-auto bg-dance-dark/50 p-8 border border-dance-gold/30 backdrop-blur-sm text-left shadow-2xl">
+                <div class="mb-6">
+                    <label class="block text-dance-gold text-xs uppercase tracking-widest mb-2">Name</label>
+                    <input type="text" id="name" class="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:outline-none focus:border-dance-gold transition-colors placeholder-white/30" placeholder="Your Name" required>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-dance-gold text-xs uppercase tracking-widest mb-2">Email</label>
+                    <input type="email" id="email" class="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:outline-none focus:border-dance-gold transition-colors placeholder-white/30" placeholder="your@email.com" required>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-dance-gold text-xs uppercase tracking-widest mb-2">Contact Number</label>
+                    <input type="tel" id="phone" class="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:outline-none focus:border-dance-gold transition-colors placeholder-white/30" placeholder="+91 98765 43210">
+                </div>
+
+                <div class="mb-8">
+                    <label class="block text-dance-gold text-xs uppercase tracking-widest mb-2">Message</label>
+                    <textarea id="message" rows="4" class="w-full bg-black/30 border border-white/20 text-white px-4 py-3 focus:outline-none focus:border-dance-gold transition-colors placeholder-white/30" placeholder="Tell me about your event..." required></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-dance-gold text-dance-dark font-bold py-3 hover:bg-white transition-all duration-300 uppercase tracking-widest text-xs shadow-lg">
+                    Send Inquiry
+                </button>
+            </form>
 
             <div class="mt-12 flex justify-center gap-8 text-2xl">
                 <a href="#" class="hover:text-dance-gold transition-colors"><i class="fab fa-instagram"></i></a>
@@ -426,18 +467,15 @@
     </footer>
 
     <script>
-        // Navbar Scroll Effect
+        // Navbar Scroll Effect - Simplified: Just change padding, color is constant
         window.addEventListener('scroll', function() {
             const nav = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                // When scrolling down, make navbar solid dark
-                nav.classList.add('bg-dance-dark/95', 'shadow-lg');
-                nav.classList.remove('bg-transparent', 'py-4', 'border-white/10');
-                nav.classList.add('py-2', 'border-dance-gold/20');
+                nav.classList.remove('py-4');
+                nav.classList.add('py-2');
             } else {
-                // At top, make navbar transparent
-                nav.classList.remove('bg-dance-dark/95', 'shadow-lg', 'py-2', 'border-dance-gold/20');
-                nav.classList.add('bg-transparent', 'py-4', 'border-white/10');
+                nav.classList.remove('py-2');
+                nav.classList.add('py-4');
             }
         });
 
@@ -453,6 +491,24 @@
         function closeMobileMenu() {
             mobileMenu.classList.add('hidden');
         }
+
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Construct Email Body
+            const subject = `Performance Inquiry from ${name}`;
+            const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AContact Number: ${phone}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+            
+            // Open Mail Client
+            window.location.href = `mailto:chinniadithi@gmail.com?subject=${subject}&body=${body}`;
+        });
     </script>
 </body>
 </html>
